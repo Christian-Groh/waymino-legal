@@ -255,6 +255,14 @@
       border: 1px solid rgba(255, 255, 255, .20);
     }
 
+    .phone-screenshot {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
     .phone-top {
       height: 92px;
       padding: 22px 20px 0;
@@ -609,41 +617,7 @@
 
           <div class="phone-shell" aria-hidden="true">
             <div class="phone-screen">
-              <div class="phone-top">
-                <div class="phone-title">
-                  <img src="assets/waymino-app-icon.png" alt="">
-                  <span>Aktive Fahrt</span>
-                </div>
-              </div>
-              <div class="phone-body">
-                <div class="route-card">
-                  <div class="route-meta">
-                    <span>05:37 - 06:00</span>
-                    <span>23 Min.</span>
-                  </div>
-                  <div class="line-pill">Linie 34</div>
-                  <div class="stop">
-                    <span class="dot active"></span>
-                    <span>Ziegelhausen, Schweizertalstr.</span>
-                    <span>05:37</span>
-                  </div>
-                  <div class="stop">
-                    <span class="dot"></span>
-                    <span>Heidelberg, Bismarckplatz</span>
-                    <span>06:00</span>
-                  </div>
-                  <div class="status">
-                    <div class="status-row good">
-                      <span>Fahrt wird begleitet</span>
-                      <span>Tracking aktiv</span>
-                    </div>
-                    <div class="status-row">
-                      <span>Nächster Halt</span>
-                      <span>Ziegelhausen, Löwen</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img class="phone-screenshot" src="assets/waymino-active-ride.png" alt="">
             </div>
           </div>
         </div>
@@ -669,13 +643,13 @@
           </article>
           <article class="feature">
             <div class="feature-mark">2</div>
-            <h3>Hinweise, die verständlich bleiben</h3>
-            <p>Hinweise sollen ruhig, klar und situationsbezogen informieren, ohne unnötigen Druck aufzubauen.</p>
+            <h3>Früh wissen, was unterwegs wichtig wird</h3>
+            <p>Soweit entsprechende Daten verfügbar sind, macht Waymino Gleisänderungen, Verspätungen, Ausfälle, Schienenersatzverkehr, Baustellen und Umstiegsdetails früh sichtbar. Zusätzlich lassen sich aktuelle Verkehrsmeldungen, Warnungen und Beeinträchtigungen für die eigene sowie für andere Strecken gezielt einsehen. So können Reisende rechtzeitig reagieren und vorbereitet unterwegs sein.</p>
           </article>
           <article class="feature">
             <div class="feature-mark">3</div>
             <h3>Echtzeit ohne Fake-Sicherheit</h3>
-            <p>Echtzeitinformationen werden vorsichtig dargestellt. Wenn Daten nicht eindeutig sind, bleibt der Status transparent.</p>
+            <p>Nur bestätigte Echtzeitdaten werden als solche dargestellt. Liegt keine verlässliche Bestätigung vor, kennzeichnet Waymino den Status transparent und zeigt die planmäßigen Fahrzeiten statt einer vermeintlich sicheren Live-Auskunft.</p>
           </article>
         </div>
       </section>
