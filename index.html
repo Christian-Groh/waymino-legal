@@ -5,13 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Waymino ist dein Live-Begleiter für Bus und Bahn: mit Abfahrts-, Einstiegs- und Ausstiegswarnungen sowie Hinweisen bei möglichen Abweichungen. Pilotbetrieb in Hessen und Baden-Württemberg.">
   <meta name="author" content="Christian Groh">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://waymino.de/">
   <meta property="og:title" content="Waymino - ÖPNV-Navigation, die mitdenkt.">
   <meta property="og:description" content="Pilotversion für begleitete ÖPNV-Navigation in Hessen und Baden-Württemberg.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Waymino">
+  <meta property="og:url" content="https://waymino.de/">
+  <meta property="og:image" content="https://waymino.de/assets/waymino-app-icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Waymino - Dein Live-Begleiter für Bus und Bahn">
+  <meta name="twitter:description" content="Begleitete ÖPNV-Navigation mit rechtzeitigen Hinweisen für Abfahrt, Umstieg und Ausstieg.">
+  <meta name="twitter:image" content="https://waymino.de/assets/waymino-app-icon.png">
   <meta name="theme-color" content="#4c0519">
   <title>Waymino - Begleitete Navigation im öffentlichen Nahverkehr</title>
   <link rel="icon" href="assets/waymino-app-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://waymino.de/#organization",
+        "name": "RideRight",
+        "url": "https://waymino.de/",
+        "email": "RideRight.waymino@gmail.com",
+        "brand": {
+          "@type": "Brand",
+          "name": "Waymino"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://waymino.de/#website",
+        "url": "https://waymino.de/",
+        "name": "Waymino",
+        "inLanguage": "de-DE",
+        "publisher": {
+          "@id": "https://waymino.de/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://waymino.de/#app",
+        "name": "Waymino",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "iOS",
+        "url": "https://waymino.de/",
+        "description": "Waymino begleitet ausgewählte Fahrten im öffentlichen Nahverkehr mit rechtzeitigen Hinweisen für Abfahrt, Einstieg, Umstieg und Ausstieg.",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://waymino.de/#organization"
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       color-scheme: light;
