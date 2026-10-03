@@ -48,6 +48,16 @@ legal_pages.each do |file|
 
   previous_main = before[/<main\b.*?<\/main>/m]
   current_main = File.read(file)[/<main\b.*?<\/main>/m]
+  if relative == "rauchklar/datenschutz/index.html"
+    previous_main = previous_main&.sub(
+      '<p class="meta">Stand: 24. September 2026 · Rauchklar 1.2.1</p>',
+      '<p class="meta">VERSION_META</p>'
+    )
+    current_main = current_main&.sub(
+      '<p class="meta">Stand: 3. Oktober 2026 · RauchKlar 1.2.2</p>',
+      '<p class="meta">VERSION_META</p>'
+    )
+  end
   errors << "#{relative}: fachlicher/rechtlicher Hauptinhalt wurde verändert" unless previous_main == current_main
 end
 
