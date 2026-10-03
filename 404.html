@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Seite nicht gefunden · RideRight</title>
+  <style>body{margin:0;display:grid;min-height:100vh;place-items:center;padding:2rem;background:#071f2a;color:#fff;font:17px/1.6 system-ui,-apple-system,sans-serif;text-align:center}a{color:#8edcff}</style>
+  <script>
+    (() => {
+      const original = window.location.pathname;
+      let target = original.toLowerCase();
+      if (target === "/kliniklar" || target.startsWith("/kliniklar/")) {
+        target = target.replace(/^\/kliniklar/, "/klinikklar");
+      }
+      const isKlarPath = /^\/(rauchklar|klinikklar|hierklar)(\/|$)/.test(target);
+      if (isKlarPath && target !== original) {
+        window.location.replace(target + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body><main><h1>Seite nicht gefunden</h1><p>Die angeforderte Seite ist nicht verfügbar.</p><p><a href="/">Zur Waymino-Startseite</a></p></main></body>
+</html>
