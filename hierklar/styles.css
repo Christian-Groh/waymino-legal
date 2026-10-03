@@ -1,3 +1,2 @@
 @import url("/assets/klar-design.css?v=20261003-2");
 :root { --family-night: #08242e; --brand-deep: #0a4a52; --brand-accent: #1a8ce0; --brand-accent-2: #8756d7; --brand-warm: #e9761d; --header-link: #bde6ff; --link: #076fb8; --button-bg: #0a6eb8; --focus: #35aafa; }
-.screenshot-grid.single { grid-template-columns: minmax(0, 22rem); justify-content: center; }
