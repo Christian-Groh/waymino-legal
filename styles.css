@@ -128,8 +128,11 @@ h3 { margin-bottom: 10px; font-size: 1.25rem; line-height: 1.2; }
 .button-primary:hover { background: #d7465d; }
 .button-secondary { border-color: rgba(255,255,255,.25); background: rgba(255,255,255,.07); color: var(--white); }
 .button-light { border-color: var(--line); background: var(--white); color: var(--red); }
-.status-line { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
-.status-pill { padding: 8px 12px; border: 1px solid rgba(255,255,255,.14); border-radius: 999px; background: rgba(255,255,255,.06); color: #e8dfe1; font-size: .8rem; font-weight: 720; }
+.status-line { display: flex; flex-wrap: wrap; gap: 0; margin: 34px 0 0; padding: 18px 0 0; border-top: 1px solid rgba(255,255,255,.16); list-style: none; }
+.status-line li { display: grid; gap: 3px; padding: 0 22px; color: #e8dfe1; font-size: .86rem; font-weight: 680; line-height: 1.35; }
+.status-line li:first-child { padding-left: 0; }
+.status-line li + li { border-left: 1px solid rgba(255,255,255,.16); }
+.status-key { color: #f08a9d; font-size: .67rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
 .device { position: relative; justify-self: center; width: min(360px, 82vw); padding: 12px; border: 1px solid rgba(255,255,255,.18); border-radius: 46px; background: #060607; box-shadow: 0 34px 84px rgba(0,0,0,.42); transform: rotate(2deg); }
 .device img { width: 100%; height: auto; aspect-ratio: 1290 / 2796; border-radius: 35px; object-fit: cover; object-position: top; }
 .device-caption { margin: 16px 0 0; color: #baa9ae; font-size: .76rem; text-align: center; }
@@ -165,6 +168,8 @@ h3 { margin-bottom: 10px; font-size: 1.25rem; line-height: 1.2; }
 .platform-label { flex: 0 0 auto; min-width: 72px; padding: 7px 10px; border-radius: 999px; background: var(--red-soft); color: var(--red); font-size: .75rem; font-weight: 850; text-align: center; text-transform: uppercase; }
 .platform-card p { margin-bottom: 0; }
 .platform-card .button { margin-top: 18px; }
+.pilot-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.pilot-actions .button { margin-top: 0; }
 .status-panel { border-radius: var(--radius); background: var(--night); color: var(--white); padding: clamp(28px, 5vw, 54px); }
 .status-panel .status-label { color: #f08a9d; font-size: .76rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
 .status-panel h2 { margin-top: 12px; color: var(--white); }
@@ -219,7 +224,10 @@ h3 { margin-bottom: 10px; font-size: 1.25rem; line-height: 1.2; }
   .product-lockup { margin-bottom: 26px; }
   .product-lockup img { width: 62px; height: 62px; }
   .hero-actions .button { width: 100%; }
-  .status-line { display: grid; }
+  .status-line { display: grid; gap: 14px; }
+  .status-line li, .status-line li:first-child { padding: 0; }
+  .status-line li + li { border-left: 0; }
+  .platform-card .button, .pilot-actions .button { width: 100%; padding-inline: 14px; text-align: center; }
   .route-grid, .support-grid { grid-template-columns: 1fr; }
   .route-step { min-height: 0; }
   .route-step::before { margin-bottom: 28px; }
